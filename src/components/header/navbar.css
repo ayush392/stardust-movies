@@ -1,0 +1,279 @@
+/* 
+Colors:
+#121212
+#ffffff
+#b3b3b3
+#1DB954
+*/
+
+
+input {
+    font-size: .8rem;
+}
+
+header {
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 3.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    margin: .5rem .85rem;
+}
+
+header nav {
+    width: 100vw;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+
+#logoimg {
+    height: 2rem;
+    width: 10rem;
+    font-weight: bold;
+    fill: #1DB954;
+    padding: 5px;
+    margin: auto;
+    margin: 1rem;
+}
+
+header nav .left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+header nav .left input {
+    width: 400px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.nav_searchbaar .search_icon {
+    background-color: #febd69;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+
+}
+
+.nav_searchbaar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .mid a {
+    color: #fff;
+}
+
+header .mid .nav_btn:hover,
+header .mid .nav_btn:active {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+header nav .mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: .8;
+}
+
+header nav .mid .nav_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .mid .nav_btn a {
+    color: #fff;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 2px;
+    padding: 8px;
+}
+
+
+
+header nav .mid .nav_btn a:hover {
+    transform: translateY(0.5px);
+    color: #1DB954;
+    transform: scale(1.1);
+    animation-delay: all 1s;
+
+}
+
+.nav_searchbaar #query {
+    background-color: rgba(153, 153, 153, 0.5);
+    font-size: 1rem;
+    color: #1DB954;
+    font-weight: 50;
+    padding: 0.15rem 1.3rem;
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    border-radius: .4rem;
+    width: 15vw;
+    border-style: hidden;
+    /* box-shadow: 0px 0px 10px 3px rgba(153, 153, 153, 0.5); */
+    width: 90%;
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+.nav_searchbaar #query:active,
+.nav_searchbaar #query:hover {
+    background-color: rgba(114, 114, 114, 0.1);
+    border-bottom: 1px solid rgba(29, 185, 84, 0.5);
+}
+
+.nav_searchbaar .search_icon {
+    background: none;
+    color: #fff;
+    border: none;
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+
+.nav_searchbaar .search_icon:hover {
+    color: #b3b3b3;
+    transform: scale(1.2);
+    animation-delay: 0.7s;
+    color: #1DB954;
+}
+
+.mid a {
+    text-decoration: none;
+}
+
+header nav .avtar {
+    cursor: pointer;
+}
+
+
+header .hamburgur {
+    display: none;
+}
+
+header .extrasearch {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    top: 50px;
+    width: 440px;
+}
+
+header .extrasearch a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav .drawer {
+    width: 250px;
+    background-color: red;
+}
+
+
+@media (max-width:800px) {
+    header .hamburgur {
+        display: block;
+    }
+
+    .hideAtMobile {
+        display: none !important;
+    }
+
+    header nav {
+        overflow: hidden;
+    }
+
+    header nav .right .nav_btn,
+    header nav .right .avtar2,
+    header nav .right .avtar {
+        display: none;
+    }
+
+    header nav .left input {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    header nav .left input::placeholder {
+        visibility: hidden;
+    }
+
+    header nav .right .cart_btn {
+        margin-right: 0;
+    }
+
+
+}
+
+@media (max-width:568px) {
+
+    header nav .left input {
+        display: none;
+    }
+
+    header nav .left .search_icon {
+        display: none;
+    }
+
+    header nav .navlogo img {
+        width: 95px;
+        margin-top: 14px;
+        margin-left: 67px;
+    }
+
+    #logoimg {
+        height: 1rem;
+        width: 5rem;
+    }
+
+    .nav_searchbaar #query {
+        /* background-color: rgba(153, 153, 153, 0.1); */
+        background-color: rgba(100, 100, 100, 0.3);
+        padding: 0.1rem .3rem;
+        font-size: .5rem;
+        color: #1DB954;
+        font-weight: 50;
+        width: 8vw;
+        border-style: hidden;
+        box-shadow: none;
+        width: 90%;
+        display: block;
+        border-bottom: 3px solid transparent;
+    }
+
+    header {
+        border-radius: .4rem;
+        margin: 0 0rem;
+    }
+
+    .movies_items {
+        display: flex;
+        flex-direction: column !important;
+    }
+}

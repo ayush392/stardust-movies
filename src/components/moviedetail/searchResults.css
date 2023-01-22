@@ -1,0 +1,80 @@
+.mainTitle {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    font-weight: 100;
+    color: White;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+hr {
+    color: white;
+}
+
+.product_img img {
+    object-fit: contain;
+    transition-delay: 1s;
+    min-width: 10vw;
+    min-height: 18vw;
+    height: 35rem;
+    width: 25rem;
+    max-width: 70vw;
+
+}
+
+.products_name {
+    max-width: 25rem;
+    text-align: center;
+    margin: .5rem !important;
+    font-size: 1.2rem;
+}
+
+.products_offer {
+    max-width: 25rem;
+    text-align: center;
+    margin: .5rem !important;
+    font-size: .7rem;
+}
+
+
+.Mui-disabled {
+    display: none !important;
+
+}
+
+.MuiPagination-ul {
+    justify-content: center;
+    column-gap: 1.5rem !important;
+    margin: 10px 0px !important;
+}
+
+.MuiPaginationItem-page {
+    background-color: rgba(29, 185, 84, .4) !important;
+    color: white !important;
+    border-radius: .5rem !important;
+}
+
+.MuiPaginationItem-page:hover {
+    border: 2px solid rgba(29, 185, 84, 1) !important;
+    background-color: rgba(114, 114, 114, .1) !important;
+}
+
+.Mui-selected {
+    background-color: rgba(29, 185, 84, 1) !important;
+}
